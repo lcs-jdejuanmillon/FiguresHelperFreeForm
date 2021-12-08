@@ -24,17 +24,17 @@ struct OutputValueView: View {
         }
         else {
             return "Cannot currently be computed."
-        }
+            }
     }
-    var body: some View {
-        Text(output)
-            .font(.title3)
-            .bold()
-    }
-}
-struct OutputValueView_Previews: PreviewProvider {
-    static var previews: some View {
-        OutputValueView(value: 12131.121,
-                        suffix: "square units")
-    }
-}
+        var body: some View {
+                Text(output)
+                    .font(.title3)
+                    .bold()
+            }
+                                        }
+                                        struct OutputValueView_Previews: PreviewProvider {
+                static var previews: some View {
+                    OutputValueView(value: 12131.121,
+                                    suffix: "square units")
+                }
+            }
