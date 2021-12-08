@@ -54,11 +54,15 @@ struct CircleView: View {
                             horizontalPadding: 50)
                 
                 SectionLabelView(text: "Radius", variable: "r")
-
+                
                 // Input: Radius
                 TextField("Radius",
                           text: $providedRadius,
                           prompt: Text("Numeric value greater than 0"))
+                // Ternary conditional operator
+                // One line if statement
+                // CONDITION TRUE FALSE
+                    .foregroundColor(radius == nil ? Color.red : Color.primary)
                 
                 SectionLabelView(text: "Area", variable: "")
                 
